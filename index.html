@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Minimalist Architecture Portfolio">
+    <meta name="description" content="Carl Engstler - Architecture Portfolio">
     <title>Carl Engstler | Architecture</title>
 
     <!-- Fonts -->
@@ -13,130 +13,100 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header id="header">
-        <div class="container header-content">
-            <a href="#" class="logo">CARL ENGSTLER.</a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#studio">Profile</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                </div>
+    <!-- Hero / Vision Section (100vh) -->
+    <header class="vision-header">
+        <div class="header-container">
+            <div class="identity-block">
+                <h1 class="logo fade-in">CARL ENGSTLER</h1>
+                <h2 class="role fade-in">ARCHITECTURE & DESIGN</h2>
+            </div>
+
+            <div class="profile-block fade-in">
+                <img src="images/profile_vision.jpg" alt="Carl Engstler">
+            </div>
+
+            <div class="bio-block fade-in">
+                <p>High-End 3D Visualisations & 2D Visuals</p>
+                <p>Media & Education</p>
+            </div>
+
+            <div class="skills-block fade-in">
+                <p>Advanced Workflows via Blender & AI</p>
+                <p>Masters Student | Valencia, Spain</p>
+            </div>
+
+            <nav class="top-nav fade-in">
+                <a href="#work">Projects</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
+
+        <!-- Decorative Brown Bar -->
+        <div class="brown-bar"></div>
     </header>
 
     <main>
-        <section id="hero">
-            <div class="container">
-                <h1 class="fade-in">Form follows <br><em>fiction.</em></h1>
-                <p class="subtitle fade-in">Masters Student in Architecture | Valencia, Spain</p>
+        <!-- Grid Section (Below Fold) -->
+        <section id="work" class="work-section">
+            <div class="grid-container">
+
+                <!-- Row 1 -->
+                <div class="grid-block brown"></div>
+                <article class="grid-block project wide">
+                    <img src="images/project_exterior.jpg" alt="Exterior Project">
+                    <div class="project-overlay">
+                        <h3>Facade Study</h3>
+                        <span>2024</span>
+                    </div>
+                </article>
+
+                <!-- Row 2 -->
+                <article class="grid-block project">
+                    <img src="images/project_interior.jpg" alt="Interior Project">
+                    <div class="project-overlay">
+                        <h3>Grand Hall</h3>
+                        <span>2024</span>
+                    </div>
+                </article>
+                <div class="grid-block brown-light"></div>
+                <article class="grid-block project">
+                    <img src="images/project_landscape.jpg" alt="Landscape Project">
+                    <div class="project-overlay">
+                        <h3>Landscape</h3>
+                        <span>2023</span>
+                    </div>
+                </article>
+
+                <!-- Row 3 -->
+                <div class="grid-block brown"></div>
+                <article class="grid-block project wide">
+                    <img src="images/project_extra_3.jpg" alt="Masterplan">
+                    <div class="project-overlay">
+                        <h3>Urban Vertex</h3>
+                        <span>2023</span>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <section id="work" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Selected Work</h2>
-                    <div class="separator"></div>
-                </div>
-
-                <div class="project-grid">
-                    <!-- Project 1 -->
-                    <article class="project-card fade-up">
-                        <div class="image-wrapper">
-                            <img src="images/project_exterior.jpg" alt="Modern Exterior Facade">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Facade Study</h3>
-                            <p>Exterior / 2024</p>
-                        </div>
-                    </article>
-
-                    <!-- Project 2 -->
-                    <article class="project-card fade-up">
-                        <div class="image-wrapper">
-                            <img src="images/project_interior.jpg" alt="Grand Hall Interior">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="project-info">
-                            <h3>The Grand Hall</h3>
-                            <p>Interior / 2024</p>
-                        </div>
-                    </article>
-
-                    <!-- Project 3 -->
-                    <article class="project-card fade-up">
-                        <div class="image-wrapper">
-                            <img src="images/project_landscape.jpg" alt="Aerial Landscape View">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Landscape Integration</h3>
-                            <p>Urban Planning / 2023</p>
-                        </div>
-                    </article>
-                    <!-- Project 4 -->
-                    <article class="project-card fade-up">
-                        <div class="image-wrapper">
-                            <img src="images/project_plan.jpg" alt="Harbor Masterplan">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Harbor Masterplan</h3>
-                            <p>Conceptual / 2023</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="studio" class="section light-bg">
-            <div class="container split-layout">
-                <div class="text-block fade-in">
-                    <h2>The Architect</h2>
-                    <p>I am Carl Engstler, a Masters Student in architecture based in Valencia, Spain. I focus on
-                        creating sustainable, narrative-driven environments that bridge the gap between structure and
-                        nature.</p>
-                    <a href="#contact" class="btn-link">Get in touch &rarr;</a>
-                </div>
-                <div class="image-block fade-in">
-                    <img src="images/profile_image.jpg" alt="Architectural Detail">
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="container footer-content">
-                <div class="contact-info">
-                    <h2>Let's build.</h2>
-                    <a href="mailto:carl.engstler@gmail.com" class="email-link">carl.engstler@gmail.com</a>
-                </div>
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2>Let's Collaborate</h2>
+                <a href="mailto:carl.engstler@gmail.com">carl.engstler@gmail.com</a>
                 <div class="socials">
                     <a href="#">Instagram</a>
                     <a href="#">LinkedIn</a>
-                    <a href="#">Behance</a>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Carl Engstler. All rights reserved.</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
