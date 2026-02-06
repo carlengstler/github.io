@@ -20,37 +20,58 @@
 
 <body>
 
-    <!-- Hero / Vision Section (100vh) -->
-    <header class="vision-header">
-        <div class="header-container">
-            <div class="identity-block">
-                <h1 class="logo fade-in">CARL ENGSTLER</h1>
-                <h2 class="role fade-in">ARCHITECTURE & DESIGN</h2>
-            </div>
-
-            <div class="profile-block fade-in">
-                <img src="images/profile_vision.jpg" alt="Carl Engstler">
-            </div>
-
-            <div class="bio-block fade-in">
-                <p>High-End 3D Visualisations & 2D Visuals</p>
-                <p>Media & Education</p>
-            </div>
-
-            <div class="skills-block fade-in">
-                <p>Advanced Workflows via Blender & AI</p>
-                <p>Masters Student | Valencia, Spain</p>
-            </div>
-
-            <nav class="top-nav fade-in">
+    <!-- Sticky Navigation Header -->
+    <header class="sticky-nav">
+        <div class="nav-container">
+            <span class="nav-brand">CARL ENGSTLER</span>
+            <nav>
+                <a href="#about">About Me</a>
                 <a href="#work">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
-
-        <!-- Decorative Brown Bar -->
-        <div class="brown-bar"></div>
     </header>
+
+    <!-- Hero / Vision Section -->
+    <section class="vision-hero">
+        <div class="hero-container">
+
+            <!-- Left Side: Identity & Aligned Bio -->
+            <div class="left-hero">
+                <div class="identity-block">
+                    <h1 class="logo fade-in">CARL ENGSTLER</h1>
+                    <h2 class="role fade-in">ARCHITECTURE & DESIGN</h2>
+                </div>
+
+                <!-- Aligned Grid for Bio -->
+                <div class="bio-grid fade-in">
+                    <div class="bio-left">High-End 3D Visualisations</div>
+                    <div class="bio-center">&</div>
+                    <div class="bio-right">2D Visuals</div>
+
+                    <div class="bio-left">Media</div>
+                    <div class="bio-center">&</div>
+                    <div class="bio-right">Education</div>
+                </div>
+            </div>
+
+            <!-- Right Side: Profile & Skills -->
+            <div class="right-hero">
+                <div class="skills-text fade-in">
+                    <p>Advanced Workflows via Blender & AI</p>
+                    <p>Masters Student | Valencia, Spain</p>
+                </div>
+                <div class="profile-block fade-in">
+                    <img src="images/profile_vision.jpg" alt="Carl Engstler">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Decorative Brown Bar (Optional, since we have sticky header now? User said "on top... sticky") -->
+        <!-- Keeping bottom bar for visual weight as per original design if desired, but user said "header way too big", 
+             maybe they meant the top gap? I will remove this bottom bar to reduce visual clutter/height -->
+    </section>
 
     <main>
         <!-- Grid Section (Below Fold) -->
